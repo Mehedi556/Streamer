@@ -66,7 +66,13 @@ const Home = () => {
         </div>
 
 
-       
+        <div className='hero pt-[50%]' style={{backgroundImage:`url('${image_path}${selected.backdrop_path}')`}}>
+          <div className=' text-white' >
+          <button className="btn bg-red-600 border-none rounded btn-sm">Play Trailer</button>
+          <h1 className='hero-title'>{selected?.title}</h1>
+          {selected.overview ? <p>{selected.overview}</p> : null}
+        </div>
+        </div>
         
 
 
